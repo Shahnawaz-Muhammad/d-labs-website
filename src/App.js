@@ -1,9 +1,14 @@
 import './App.css';
+import Features from './components/features';
+import Header from './components/header';
+import Hero from './components/hero';
 
 function App() {
   return (
     <div className="App">
-     <h1 className='text-4xl font-bold bg-green-200'>hello world</h1>
+     <Header />
+     <Hero />
+     <Features />
     </div>
   );
 }

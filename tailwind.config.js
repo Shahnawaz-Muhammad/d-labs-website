@@ -6,12 +6,9 @@ export default {
       colors: {
         transparent: "transparent",
         white: "#fff",
-        primary: "#262626",
-        secondary: "#E45F4E",
-        lightGray: "#848484",
-        bgLight: "#f4f4f4"
-        
-
+        black: "#000",
+        yellow: "#ffd60a",
+        lightGray: "#d4d2d2",
       },
       fontFamily: {
         'raleway': ['Raleway', 'sans-serif'],
