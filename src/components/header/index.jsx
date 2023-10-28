@@ -5,6 +5,7 @@ import {  RxCross1 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -17,6 +18,8 @@ import { Link, useLocation } from "react-router-dom";
 =======
 import { GiHamburgerMenu } from "react-icons/gi";
 >>>>>>> af9ae11 (changes and code merge)
+=======
+>>>>>>> 7db5323 (footer, other pages, routing, active navItems)
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);

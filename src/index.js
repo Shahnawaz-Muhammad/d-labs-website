@@ -14,6 +14,7 @@ root.render(
     <BrowserRouter>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      <AnimatePresence mode="wait">
      <App />
      </AnimatePresence>
@@ -23,6 +24,12 @@ root.render(
 =======
         <App />
 >>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
+=======
+        <App />
+=======
+      <App />
+>>>>>>> 8da6e08 (footer, other pages, routing, active navItems)
+>>>>>>> 7db5323 (footer, other pages, routing, active navItems)
     </BrowserRouter>
   </React.StrictMode>
 );

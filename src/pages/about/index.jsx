@@ -1,6 +1,9 @@
 import React from 'react'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7db5323 (footer, other pages, routing, active navItems)
 import PageTitle from '../../components/page-title'
 import Amenities from '../../components/amneties'
 import OurBenefits from '../../components/OurBenifits'
@@ -14,6 +17,7 @@ const About = ({title}) => {
       
     </>
 =======
+<<<<<<< HEAD
 =======
 import PageTitle from '../../components/page-title'
 >>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
@@ -29,6 +33,13 @@ const About = ({title}) => {
       
     </>
 >>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
+=======
+
+const About = () => {
+  return (
+    <div>About</div>
+>>>>>>> 8da6e08 (footer, other pages, routing, active navItems)
+>>>>>>> 7db5323 (footer, other pages, routing, active navItems)
   )
 }
 
