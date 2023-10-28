@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import { Link, useLocation } from "react-router-dom";
+import {  RxCross1 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
