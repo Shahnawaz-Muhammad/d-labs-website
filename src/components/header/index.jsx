@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
+  const location = useLocation(); // Get the current location from React Router
+  const [activeNavItem, setActiveNavItem] = useState(location.pathname);
+
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "Features", path: "/features" },
+    { label: "About", path: "/about" },
+    { label: "Pricing", path: "/pricing" },
+    { label: "Contact Us", path: "/contact" },
+  ];
 
   const toggleNavMobile = () => {
     setNavMobile(!navMobile);
@@ -41,15 +52,28 @@ const Header = () => {
             </h1>
 
             <div className="max-w-full text-primary hidden md:flex gap-5 font-roboto items-center text-white uppercase">
-              <p>Home</p>
-              <p>Features</p>
-              <p>About</p>
-              <p>Pricing</p>
-              <p>Contact Us</p>
+              {navItems.map((item) => (
+                <Link
+                  to={item.path}
+                  key={item.path}
+                  className={`relative group cursor-pointer ${
+                    location.pathname === item.path ? "active" : ""
+                  }`}
+                  onMouseEnter={() => setActiveNavItem(item.path)}
+                  onMouseLeave={() => setActiveNavItem(location.pathname)}
+                >
+                  {item.label}
+                  <span
+                    className={`absolute w-full h-1 bg-primary -bottom-2 left-0 transform scale-x-0 ${
+                      activeNavItem === item.path ? "scale-x-100" : ""
+                    } group-hover:scale-x-100 transition-transform duration-300 ease-in-out bg-gradient-to-r from-[#00e1dd] to-[#e1f339]`}
+                  ></span>
+                </Link>
+              ))}
             </div>
 
             <div className="md:flex items-center hidden">
-              <button className="bg-yellow text-black uppercase text-lg font-semibold py-2 px-4 rounded-xl">
+              <button className="bg-gradient-to-r from-[#00e1dd] to-[#e1f339]  text-white uppercase text-lg font-semibold py-2 px-4 ">
                 Book a Tour
               </button>
             </div>
@@ -80,7 +104,7 @@ const Header = () => {
               <p>About</p>
               <p>Pricing</p>
               <p>Contact Us</p>
-              <button className="bg-yellow text-black uppercase text-lg font-semibold py-2 px-4 rounded-xl">
+              <button className="bg-gradient-to-r from-[#00e1dd] to-[#e1f339]  text-white uppercase text-lg font-semibold py-2 px-4 ">
                 Book a Tour
               </button>
             </div>
