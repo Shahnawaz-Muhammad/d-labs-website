@@ -23,7 +23,7 @@ const Features = () => {
         <MdAddBusiness className="text-5xl"/>
         <h1 className="text-md">Business</h1>
       </div>
-      <div className="col-span-full lg:col-span-1 w-full flex flex-col justify-center gap-3 items-center text-center py-10  lg:border-r border-gray-400 text-white uppercase">
+      <div className="col-span-full lg:col-span-1 w-full flex flex-col justify-center gap-3 items-center text-center py-10  text-white uppercase">
         <MdOutlineRealEstateAgent className="text-5xl"/>
         <h1 className="text-md">Agency</h1>
       </div>

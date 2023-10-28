@@ -3,16 +3,14 @@ import carouselImg2 from "../../assets/images/slider-1-bg2.jpg";
 import carouselImg3 from "../../assets/images/slider-1-bg3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
-import {
-  BiSolidChevronLeft,
-  BiSolidChevronRight,
-  // BiSupport,
-} from "react-icons/bi";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Hero = () => {
+
+  
   const sliderData = [
     {
       id: 1,

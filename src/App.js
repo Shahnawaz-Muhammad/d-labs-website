@@ -1,14 +1,22 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Features from './components/features';
-import Header from './components/header';
-import Hero from './components/hero';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import Features from './pages/features';
+import Pricing from './pages/pricing';
+import About from './pages/about';
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Hero />
-     <Features />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+     
     </div>
   );
 }
