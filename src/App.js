@@ -1,9 +1,14 @@
 import './App.css';
+import Header from './components/header';
+import LearnMore from './components/learnmore';
+import AboutUs from './components/AboutUs'
 
 function App() {
   return (
     <div className="App">
-     <h1 className='text-4xl font-bold bg-green-200'>hello world</h1>
+     {/* <Header /> */}
+     {/* <LearnMore /> */}
+     <AboutUs />
     </div>
   );
 }
