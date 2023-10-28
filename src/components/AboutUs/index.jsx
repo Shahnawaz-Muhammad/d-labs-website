@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillBank } from "react-icons/ai";
+// import { AiFillBank } from "react-icons/ai";
 export default function LearnMore() {
   return (
     <div className="w-full flex justify-center">
@@ -24,7 +24,7 @@ export default function LearnMore() {
         </div>
         <div class="grid grid-cols-4 gap-4 mt-10">
             <div className="bg-red-400">
-              <AiFillBank />
+              {/* <AiFillBank /> */}
             </div>
             <div className="bg-red-400">02</div>
             <div className="bg-red-400">03</div>

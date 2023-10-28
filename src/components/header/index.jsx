@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -57,7 +58,7 @@ const Header = () => {
               onClick={toggleNavMobile}
               className="md:hidden items-center flex"
             >
-              <RxHamburgerMenu className="text-3xl text-white" />
+              <GiHamburgerMenu className="text-3xl text-white" />
             </button>
           </div>
         </div>
