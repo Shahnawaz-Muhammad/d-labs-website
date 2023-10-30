@@ -1,8 +1,12 @@
 import React from 'react'
+import PageTitle from '../../components/page-title'
 
-const Pricing = () => {
+const Pricing = ({title}) => {
   return (
-    <div>Pricing</div>
+    <>
+    <PageTitle title={title}/>
+      
+    </>
   )
 }
 

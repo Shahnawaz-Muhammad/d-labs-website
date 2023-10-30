@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTitle from "../../components/page-title";
 
-const Features = () => {
+const Features = ({title}) => {
   return (
-    <div>Features</div>
-  )
-}
+   <>
+    <PageTitle title={title}/>
+   </>
+  );
+};
 
-export default Features
+export default Features;

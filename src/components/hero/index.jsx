@@ -67,12 +67,12 @@ const Hero = () => {
 
                     <div className="absolute top-0 z-50 flex items-center justify-center w-full h-full ">
                       <div className="w-full max-w-screen-xl">
-                      <div className="w-full  flex flex-col  gap-2 lg:gap-3 max-w-screen-md">
-                        <div className="text-2xl lg:text-6xl font-bold capitalize text-white flex flex-col gap-4">
+                      <div className="w-full  flex flex-col  gap-2 lg:gap-3 mx-auto px-4 md:px-8 xl:px-4 ">
+                        <div className="text-3xl md:text-5xl lg:text-6xl font-bold capitalize text-white flex flex-col gap-4  text-center md:text-start px-5 md:px-0 max-w-lg lg:max-w-2xl">
                           <h2>{item.title}</h2>
                           
                         </div>
-                        <p className="text-md text-lightGray font-light">
+                        <p className="text-lg text-lightGray font-light hidden lg:block">
                           {item.text}
                         </p>
                       </div>
