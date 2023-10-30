@@ -3,16 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-<<<<<<< HEAD
-        <App />
-=======
-      <App />
->>>>>>> 8da6e08 (footer, other pages, routing, active navItems)
+     <AnimatePresence mode="wait">
+     <App />
+     </AnimatePresence>
     </BrowserRouter>
   </React.StrictMode>
 );

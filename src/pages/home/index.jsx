@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import Hero from "../../components/hero";
 import HeroFeatures from "../../components/hero-features";
 import Testimonials from "../../components/testimonials";
@@ -11,7 +10,7 @@ import OurBenefits from "../../components/OurBenifits";
 const Home = () => {
   return (
     <>
-<<<<<<< HEAD
+
       <Hero />
       <HeroFeatures />
       <LearnMore />

@@ -12,7 +12,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <div className="App">
-      {" "}
+
       <AnimatePresence mode="wait">
         <Header />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           <Route path="/pricing" element={<Pricing title="Pricing" />} />
           <Route path="/contact" element={<Contact title="Contact" />} />
         </Routes>
-        <Footer />{" "}
+        <Footer />
       </AnimatePresence>
     </div>
   );
