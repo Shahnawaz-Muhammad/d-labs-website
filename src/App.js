@@ -4,17 +4,21 @@ import LearnMore from './components/learn-more';
 import AboutUs from './components/AboutUs'
 import Features from './components/features';
 import Hero from './components/hero';
+import OurBenifits from './components/OurBenifits';
+import Mission from './components/Mission'
 
 function App() {
   return (
     <div className="App">
-     {/* <Header /> */}
-     {/* <LearnMore /> */}
-     {/* <Header />
+     <Header />
      <Hero />
-     <Features /> */}
-     {/* <LearnMore /> */}
+     <Features />
+     <LearnMore />
+     <Header />
+     <LearnMore />
      <AboutUs />
+     <OurBenifits />
+     <Mission />
     </div>
   );
 }
