@@ -1,9 +1,12 @@
 import './App.css';
+import Form from './components/Form';
+import Packages from './components/Packages';
 
 function App() {
   return (
     <div className="App">
-     <h1 className='text-4xl font-bold bg-green-200'>hello world</h1>
+      <Packages/>
+      <Form/> 
     </div>
   );
 }
