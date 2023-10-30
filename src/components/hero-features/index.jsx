@@ -4,7 +4,7 @@ import {GiTechnoHeart} from "react-icons/gi"
 import {RiSecurePaymentLine} from "react-icons/ri"
 import {MdAddBusiness,MdOutlineRealEstateAgent} from "react-icons/md"
 
-const Features = () => {
+const HeroFeatures = () => {
   return (
     <div className="grid grid-cols-6 lg:grid-cols-5  bg-[#5543ca]   ">
       <div className="col-span-3 lg:col-span-1 w-full flex flex-col justify-center gap-3 items-center text-center py-10 border-r border-b lg:border-b-0  lg:border-r border-gray-400 text-white uppercase">
@@ -31,4 +31,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default HeroFeatures;
