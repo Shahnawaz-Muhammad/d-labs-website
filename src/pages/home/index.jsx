@@ -1,5 +1,6 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Hero from "../../components/hero";
 import HeroFeatures from "../../components/hero-features";
 import Testimonials from "../../components/testimonials";
@@ -13,10 +14,17 @@ import Hero from "../../components/hero";
 import Features from "../../components/features";
 import Footer from "../../components/footer";
 >>>>>>> 117ef61 (footer, other pages, routing, active navItems)
+=======
+import Hero from "../../components/hero";
+import HeroFeatures from "../../components/hero-features";
+import Testimonials from "../../components/testimonials";
+import FrequentlyAskedQuestions from "../../components/faq";
+>>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
 
 const Home = () => {
   return (
     <>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
       <Hero />
@@ -33,6 +41,14 @@ const Home = () => {
       <Features />
       <Footer />
 >>>>>>> 117ef61 (footer, other pages, routing, active navItems)
+=======
+      <Hero />
+      <HeroFeatures />
+
+      <FrequentlyAskedQuestions />
+
+      <Testimonials />
+>>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
     </>
   );
 };
