@@ -1,6 +1,6 @@
 import React from "react";
 import images from "../../assets/images/utils/Images";
-export default function LearnMore() {
+export default function OurBenefits() {
   return (
     <div className="w-full flex justify-center pb-10">
       <div className="max-w-screen-xl w-full pt-10 px-8 xl:px-0 ">

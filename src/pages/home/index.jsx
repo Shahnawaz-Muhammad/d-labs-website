@@ -4,12 +4,9 @@ import Hero from "../../components/hero";
 import HeroFeatures from "../../components/hero-features";
 import Testimonials from "../../components/testimonials";
 import FrequentlyAskedQuestions from "../../components/faq";
-=======
-import Header from "../../components/header";
-import Hero from "../../components/hero";
-import Features from "../../components/features";
-import Footer from "../../components/footer";
->>>>>>> 8da6e08 (footer, other pages, routing, active navItems)
+import LearnMore from "../../components/learn-more";
+import Amenities from "../../components/amneties";
+import OurBenefits from "../../components/OurBenifits";
 
 const Home = () => {
   return (
@@ -17,16 +14,12 @@ const Home = () => {
 <<<<<<< HEAD
       <Hero />
       <HeroFeatures />
-
+      <LearnMore />
+      <Amenities />
+      <Testimonials />
+      <OurBenefits />
       <FrequentlyAskedQuestions />
 
-      <Testimonials />
-=======
-      <Header />
-      <Hero />
-      <Features />
-      <Footer />
->>>>>>> 8da6e08 (footer, other pages, routing, active navItems)
     </>
   );
 };

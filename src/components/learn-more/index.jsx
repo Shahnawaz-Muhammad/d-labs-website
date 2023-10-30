@@ -3,8 +3,8 @@ import React from "react";
 export default function LearnMore() {
   return (
     <div className="w-full flex justify-center">
-    <div className="max-w-screen-xl w-full pt-10 px-8 xl:px-0">
-      <div className="flex justify-between">
+    <div className="max-w-screen-xl w-full py-20 px-8 xl:px-0">
+      <div className="flex justify-between text-sm">
         <h1>01 WELCOME TO WORK HUB</h1>
         <button>FOLLOW US</button>
       </div>

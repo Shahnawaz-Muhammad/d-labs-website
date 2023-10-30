@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillBank, AiFillSecurityScan,AiFillSketchCircle,AiFillTrophy,AiOutlineAreaChart,AiOutlineDribbbleSquare,AiOutlineCrown,AiOutlineDeploymentUnit } from "react-icons/ai";
-export default function LearnMore() {
+export default function Amenities() {
   return (
     <div className="w-full flex justify-center bg-[#f2f3f7] pb-10">
       <div className="max-w-screen-xl w-full pt-10 px-8 xl:px-0">
