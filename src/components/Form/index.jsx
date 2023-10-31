@@ -1,4 +1,5 @@
 import React from "react";
+import '../../App.css';
 import { useForm } from "react-hook-form";
 
 export default function Form() {
@@ -27,16 +28,17 @@ export default function Form() {
           back to you asap.
         </div>
 
-        <div className="m-10     ">
+        <div className="m-10">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="md:mb-6 flex flex-col md:flex-row  ">
-              <div className="relative z-0 w-full md:w-1/2 mb-6 group md:pr-4">
+              <div className="relative z-0 w-full md:w-1/2 mb-6 group md:pr-4 h-20">
                 <input
                   {...register("fName", { required: true, minLength: 3 })}
                   aria-invalid={errors.fName ? "true" : "false"}
                   type="name"
                   name="fName"
                   id="fName"
+                  autoComplete="off"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="  "
                   
@@ -52,12 +54,13 @@ export default function Form() {
                 </label>
               </div>
 
-              <div className="relative z-0 w-full md:w-1/2 mb-6 group ">
+              <div className="relative z-0 w-full md:w-1/2 mb-6 group h-20">
                 <input
                   {...register("lName", { required: true })}
                   aria-invalid={errors.lName ? "true" : "false"}
                   type="name"
                   name="lName"
+                  autoComplete="off"
                   id="lName"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="  "
@@ -75,15 +78,17 @@ export default function Form() {
               </div>
             </div>
             <div className="md:mb-6 flex flex-col md:flex-row ">
-              <div className="relative z-0 w-full md:w-1/2 mb-6 group md:pr-4">
+              <div className="relative z-0 w-full md:w-1/2 mb-6 group md:pr-4 h-20">
                 <input
-                  {...register("number", { required: true })}
+                  {...register("number", { required: true, minLength: 5  })}
                   aria-invalid={errors.number ? "true" : "false"}
                   type="number"
                   name="number"
                   id="number"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  autoComplete="off"
+                  className="block custom-input py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
+                  
                   
                 />
                 {errors.number?.type === "required" && (
@@ -97,13 +102,21 @@ export default function Form() {
                 </label>
               </div>
 
-              <div className="relative z-0 w-full md:w-1/2 mb-6 group ">
+              <div className="relative z-0 w-full md:w-1/2 mb-6 group h-20">
                 <input
-                  {...register("email", { required: "Email Address is required" })}
+                 {...register("email", {
+                  required: "Email Address is required", pattern:(value) => {
+                      if (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
+                        return true;
+                      }
+                      return "Invalid Email Address";
+                    },
+                })}
                   aria-invalid={errors.email ? "true" : "false"}
                   type="email"
                   name="email"
                   id="email"
+                  autoComplete="off"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   
@@ -119,7 +132,7 @@ export default function Form() {
                 </label>
               </div>
             </div>
-            <div className="md:mb-6 flex flex-row ">
+            <div className="md:mb-6 flex flex-row h-20">
               <div className="relative z-0 w-full  mb-6 group">
                 <input
                   {...register("date", { required: true })}
@@ -127,6 +140,7 @@ export default function Form() {
                   type="date"
                   name="date"
                   id="date"
+                  autoComplete="off"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="  "
                   
@@ -143,7 +157,7 @@ export default function Form() {
               </div>
             </div>
 
-            <div className="md:mb-6 flex flex-row ">
+            <div className="md:mb-6 flex flex-row h-20">
               <div className="relative z-0 w-full  mb-6 group ">
                 <input
                   {...register("about", { required: true })}
@@ -151,6 +165,7 @@ export default function Form() {
                   type="text"
                   name="about"
                   id="about"
+                  autoComplete="off"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="  "
                   
@@ -167,7 +182,7 @@ export default function Form() {
               </div>
             </div>
 
-            <div className="mb-6 flex flex-row ">
+            <div className="mb-6 flex flex-row h-20">
               <div className="relative z-0 w-full  mb-6 group ">
                 <input
                   {...register("message", { required: true })}
@@ -175,6 +190,7 @@ export default function Form() {
                   type="text"
                   name="message"
                   id="message"
+                  autoComplete="off"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder="  "
                   
@@ -191,7 +207,7 @@ export default function Form() {
               </div>
             </div>
 
-            <div className="mb-6 flex flex-col min-h-[1.5rem]  justify-start pl-[1.5rem]">
+            <div className="pb-24 md:pb-16 flex flex-col max-h-16 justify-start pl-[1.5rem]">
                 <div className="flex gap-3 items-center">
 
               <input
@@ -217,7 +233,7 @@ export default function Form() {
             <div className="text-center">
               <button
                 type="submit"
-                className="  bg-primary py-5 px-10  text-lg font-semibold uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                className="  bg-primary py-5 px-10  text-lg font-semibold uppercase leading-normal hover:underline text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
               >
                 Submit
               </button>
