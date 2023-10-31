@@ -4,10 +4,10 @@ export default function LearnMore() {
   return (
     <div className="w-full flex justify-center">
     <div className="max-w-screen-xl w-full py-20 px-8 xl:px-0">
-      <div className="flex justify-between text-sm">
+      {/* <div className="flex justify-between text-sm">
         <h1>01 WELCOME TO WORK HUB</h1>
         <button>FOLLOW US</button>
-      </div>
+      </div> */}
       <div className="flex flex-col items-center text-center pt-10 lg:pt-28 ">
         <h1>LEARN AND GROW</h1>
         <h1 className="pt-6 text-4xl font-bold lg:text-7xl">Sustainable Coworking <br />in Your Town</h1>

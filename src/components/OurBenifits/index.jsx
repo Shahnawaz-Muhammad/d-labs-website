@@ -4,13 +4,17 @@ export default function OurBenefits() {
   return (
     <div className="w-full flex justify-center pb-10">
       <div className="max-w-screen-xl w-full pt-10 px-8 xl:px-0 ">
-        <div className="flex justify-between">
+        {/* <div className="flex justify-between">
           <h1 className="text-[#bdc1ca]">05 OUR BENEFITS</h1>
           <button className="text-[#bdc1ca]">FOLLOW US</button>
-        </div>
+        </div> */}
         <div className="flex flex-col md:flex-row gap-5 md:gap-20  pt-10 lg:pt-28  pb-4">
           <div className="  w-full md:w-1/2 ">
-            <img src={images.imageBenifits} alt="Image Description" className="min-h-full h-96 md:h-full object-cover w-full" />
+            <img
+              src={images.imageBenifits}
+              alt=" Description"
+              className="min-h-full h-96 md:h-full object-cover w-full"
+            />
           </div>
 
           <div className="w-full md:w-1/2 ">
