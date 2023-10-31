@@ -49,11 +49,7 @@ const FrequentlyAskedQuestions = () => {
   const [expandedFAQIndex, setExpandedFAQIndex] = useState(null);
   return (
     <div
-<<<<<<< HEAD
       className={`w-full z-20 flex justify-center py-20 text-bgLight mx-auto px-4 md:px-8 xl:px-4`}
-=======
-      className={`w-full z-20 flex justify-center py-4 text-bgLight mx-auto px-4 md:px-8 xl:px-4`}
->>>>>>> ab60a54 (testimonials, faq's component, pages-titles)
     >
       <div className="max-w-screen-xl w-full">
         <div className="w-full flex flex-col items-center gap-8 justify-center ">

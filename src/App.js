@@ -6,10 +6,13 @@ import Contact from './pages/contact';
 import Features from './pages/features';
 import Pricing from './pages/pricing';
 import About from './pages/about';
+import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -17,7 +20,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-     
+     <Footer />
     </div>
   );
 }
