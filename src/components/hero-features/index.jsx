@@ -12,7 +12,7 @@ const HeroFeatures = () => {
   const [showFeature4, setShowFeature4] = useState(false);
   const [showFeature5, setShowFeature5] = useState(false);
   return (
-    <div className="grid grid-cols-6 lg:grid-cols-5  bg-[#5543ca]">
+    <div className="grid grid-cols-6 lg:grid-cols-5  bg-yellowDark">
       <div
         className=" col-span-3 lg:col-span-1 w-full flex flex-col justify-center gap-3 items-center text-center border-r border-b lg:border-b-0 lg:border-r border-gray-400 text-white uppercase cursor-pointer"
         
@@ -30,7 +30,7 @@ const HeroFeatures = () => {
               : { y: -100, opacity: 0, zIndex: -1 }
           }
           transition={{ duration: 0.3 }}
-          className="w-full h-full absolute top-0 bg-purple-600 flex flex-col justify-center items-center text-white"
+          className="w-full h-full absolute top-0 bg-yellow flex flex-col justify-center items-center text-white"
         >
           <h2>hello</h2>
           <p>
@@ -56,7 +56,7 @@ const HeroFeatures = () => {
                 : { y: -100, opacity: 0, zIndex: -1 }
             }
             transition={{ duration: 0.3 }}
-            className="w-full h-full absolute top-0 bg-purple-600 flex flex-col justify-center items-center text-white"
+            className="w-full h-full absolute top-0 bg-yellow flex flex-col justify-center items-center text-white"
           >
             <h2>hello</h2>
             <p>
@@ -82,7 +82,7 @@ const HeroFeatures = () => {
                 : { y: -100, opacity: 0, zIndex: -1 }
             }
             transition={{ duration: 0.3 }}
-            className="w-full h-full absolute top-0 bg-purple-600 flex flex-col justify-center items-center text-white"
+            className="w-full h-full absolute top-0 bg-yellow flex flex-col justify-center items-center text-white"
           >
             <h2>hello</h2>
             <p>
@@ -109,7 +109,7 @@ const HeroFeatures = () => {
                 : { y: -100, opacity: 0, zIndex: -1 }
             }
             transition={{ duration: 0.3 }}
-            className="w-full h-full absolute top-0 bg-purple-600 flex flex-col justify-center items-center text-white"
+            className="w-full h-full absolute top-0 bg-yellow flex flex-col justify-center items-center text-white"
           >
             <h2>hello</h2>
             <p>
@@ -136,7 +136,7 @@ const HeroFeatures = () => {
                 : { y: -100, opacity: 0, zIndex: -1 }
             }
             transition={{ duration: 0.3 }}
-            className="w-full h-full absolute top-0 bg-purple-600 flex flex-col justify-center items-center text-white"
+            className="w-full h-full absolute top-0 bg-yellow flex flex-col justify-center items-center text-white"
           >
             <h2>hello</h2>
             <p>

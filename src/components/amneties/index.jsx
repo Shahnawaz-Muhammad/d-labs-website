@@ -11,12 +11,12 @@ export default function Amenities() {
         <div className="flex flex-col items-center text-center pt-10 lg:pt-28 ">
           <h1 className="text-[#4e3cc8]">LEARN AND GROW</h1>
           <h1 className="pt-6 text-4xl font-bold lg:text-7xl">Our Amenities</h1>
-          <div className="flex justify-center pt-10">
+          <div className="flex justify-center pt-8">
             <div className="w-2 h-2  rounded-full bg-[#4e3cc8]"></div>
             <div className="w-2 h-2 ml-2 rounded-full bg-[#4e3cc8]"></div>
             <div className="w-2 h-2  ml-2 rounded-full bg-[#4e3cc8]"></div>
           </div>
-          <p className="pt-10 text-[#a2a3a8] max-w-lg">
+          <p className="pt-8 text-textGray max-w-lg">
             A 2007 survey showed that many employees worry about feeling
             isolated and losing human interaction if they were to telecommute.
           </p>

@@ -37,7 +37,7 @@ const TestimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-lightGray max-w-full  bg-transparent  px-0 py-10 flex justify-center ">
+    <div className="bg-bgGray max-w-full  bg-transparent  px-0 py-10 flex justify-center ">
       <div className="relative w-full h-full flex justify-center bg-[#4e3bc8] max-w-screen-xl ">
         <Swiper
           slidesPerView={1}

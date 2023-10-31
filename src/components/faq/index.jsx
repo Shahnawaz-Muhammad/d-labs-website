@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { PiDotOutlineFill } from "react-icons/pi";
 import { motion } from "framer-motion";
 
 const FrequentlyAskedQuestions = () => {
@@ -49,7 +48,7 @@ const FrequentlyAskedQuestions = () => {
   const [expandedFAQIndex, setExpandedFAQIndex] = useState(null);
   return (
     <div
-      className={`w-full z-20 flex justify-center py-20 text-bgLight mx-auto px-4 md:px-8 xl:px-4`}
+      className={`w-full z-20 flex justify-center py-20 text-bgLight mx-auto px-4 md:px-8 xl:px-4 bg-bgGray`}
     >
       <div className="max-w-screen-xl w-full">
         <div className="w-full flex flex-col items-center gap-8 justify-center ">
