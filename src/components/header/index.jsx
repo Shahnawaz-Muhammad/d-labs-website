@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+=======
+import {  RxCross1 } from "react-icons/rx";
+>>>>>>> 4e4e53d (footer, other pages, routing, active navItems)
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 
